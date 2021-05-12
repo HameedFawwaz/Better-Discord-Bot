@@ -63,4 +63,4 @@ async def hourly_reset():
             await asyncio.sleep(30)
 
 bot.loop.create_task(hourly_reset())
-bot.run("NjExMjQ1Njg0ODg4MTc0NTky.XVRA5w.5Ew8X2mOJZn9z3pAk8qq87_tjGc")
+bot.run("token")
