@@ -148,34 +148,21 @@ class Bee(commands.Cog):
                                             
                                         
                                         else:
-                                            engine.save_to_file("Oh No! You spelled the word wrong. Now go back to your fucking special ed school. ", "resources/bad.mp3")
+                                            engine.save_to_file("Oh No! You spelled the word wrong.", "resources/bad.mp3")
                                             engine.runAndWait()
 
-                                            sound1 = AudioSegment.from_mp3("resources/bruh.mp3")
-                                            sound2 = AudioSegment.from_mp3("resources/bad.mp3")
-
-                                            total = sound1 + sound2
-
                                             await asyncio.sleep(5)
-                                            total.export("resources/result.mp3", format="mp3")
-                                            voice.play(discord.FFmpegPCMAudio("resources/result.mp3", executable="C:/ffmpeg/bin/ffmpeg.exe"))
+                                            voice.play(discord.FFmpegPCMAudio("resources/bad.mp3", executable="C:/ffmpeg/bin/ffmpeg.exe"))
                                             voice.source = discord.PCMVolumeTransformer(voice.source)
                                             voice.source.volume = 0.25
                                             
 
                             else:
-                                engine.save_to_file("Oh No! You spelled the word wrong. Now go back to your fucking special ed school.", "resources/bad.mp3")
+                                engine.save_to_file("Oh No! You spelled the word wrong. ", "resources/bad.mp3")
                                 engine.runAndWait()
 
-                                sound1 = AudioSegment.from_mp3("resources/bruh.mp3")
-                                sound2 = AudioSegment.from_mp3("resources/bad.mp3")
-
-                                total = sound1 + sound2
-
-                                total.export("resources/result.mp3", format="mp3")
-
                                 await asyncio.sleep(7)
-                                voice.play(discord.FFmpegPCMAudio("resources/result.mp3", executable="C:/ffmpeg/bin/ffmpeg.exe"))
+                                voice.play(discord.FFmpegPCMAudio("resources/bad.mp3", executable="C:/ffmpeg/bin/ffmpeg.exe"))
                                 voice.source = discord.PCMVolumeTransformer(voice.source)
                                 voice.source.volume = 0.25
                                 
