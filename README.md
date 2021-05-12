@@ -5,4 +5,4 @@ This bot is mainly focused around memes and a game that is present in it. There 
 The Spelling Bee Game is just as it sounds. When you enter a command, the bot would join the discord voice channel you are currently in and initiate a spelling bee game as shown in the video below 
 
 
-The Deep Fake Meme Generator uses the First Order Motion Model from https://github.com/AliaksandrSiarohin/first-order-model with some minor modifications here and there in the code. The Generator essentially takes an image that the user inputs and turns it into a deepfake meme
+The Deep Fake Meme Generator uses the First Order Motion Model from https://github.com/AliaksandrSiarohin/first-order-model with some minor modifications here and there in the code. The Generator essentially takes an image that the user inputs and turns it into a deepfake meme. 
